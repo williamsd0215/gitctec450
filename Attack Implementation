@@ -4,6 +4,9 @@ The attack was tested using multiple epsilon values (0.05, 0.15, 0.25) to measur
 Results showed a significant drop in performance, with accuracy decreasing from 98.23% to as low as 32.28%.
 
 Code:
+# ==========================================================
+# FGSM ADVERSARIAL ATTACK
+# ==========================================================
 def fgsm_attack(original_image, epsilon, gradient):
 
     perturbation = epsilon * gradient.sign()
